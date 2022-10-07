@@ -9,7 +9,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing:inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -55,7 +55,8 @@ img {
 .global-wrapper {
   flex-grow: 1;
   display: flex;
-  width: 100%;;
+  width: 100%;
+  ;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -69,7 +70,7 @@ img {
   max-width: 600px;
   padding: 24px;
   background-image: url(../img/left-bg.jpg);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
 }
@@ -85,15 +86,16 @@ img {
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
-  color:#fff;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 .hero-link {
   display: inline-block;
   font-family: 'Bebas Neue', 'Roboto Condensed', "Arial", sans-serif;
   font-weight: 400;
-  background-color:#1e90ff;
+  background-color: #1e90ff;
   color: #fff;
   text-decoration: none;
   letter-spacing: 2px;
@@ -107,6 +109,7 @@ img {
 .hero-link:active {
   background-color: rgba(30, 144, 255, 0.6);
 }
+
 .hero-link__inner {
   display: flex;
   padding: 12px 24px;
@@ -124,14 +127,153 @@ img {
 }
 
 
+/* LATEST-VIDEOS */
+.latest-videos {
+  width: 100%;
+  max-width: 600px;
+  padding: 54px;
+}
+
+.latest-videos__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: 'Bebas Neue', 'Roboto Condensed', "Arial", sans-serif;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.latest-videos__divider {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #999;
+}
+
+.latest-videos__lists {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  list-style: none;
+}
+
+.latest-videos__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* ITEM-LATEST-VIDEOS */
+
+.item-latest__videos {
+  display: flex;
+}
+
+.item-latest__videos-img {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-latest__video-info {
+  padding: 16px;
+}
+
+.item-latest__video-heading {
+  margin-top: 0;
+  font-family: 'Bebas Neue', 'Roboto Condensed', "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.item-latest__video-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+}
+
+.item-latest__video-link:hover {
+  color: #1e90ff;
+}
+
+.item-latest__video-link:active {
+  opacity: 0.6;
+}
+
+.item-latest__videos-meta {
+  display: flex;
+  align-items:center;
+  color:#888 ;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.item-latest__video-published-at {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.item-latest__video-published-at::before {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url(../img/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: " ";
+}
+
+.item-latest__videos-views {
+  display: flex;
+  align-items: center;
+}
+
+.item-latest__videos-views::before {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url(../img/visibility.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: " ";
+}
+
+/* BUTTON */
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  border-radius:4px;
+  background-color: #1e90ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+background: rgba(30, 144, 255, 0.8);
+}
+
+.btn:active {
+background: rgba(30, 144, 255, 0.6);
+}
+
 /* RETINA BG */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
 
   .hero {
     background-image: url(../img/left-bg.jpg);
